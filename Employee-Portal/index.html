@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Portal</title>
+    <link rel="icon" href="/Employee-Portal/online-interview.png">
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            font-family: Arial,sans-serif;
+            background-color:rgb(164, 164, 223);
+        }
+        header{
+            background-color:rgb(114, 114, 231);
+            color: antiquewhite;
+            text-align: center;
+            padding: 2px;
+            
+        }
+        .naviteam{
+            display: inline;
+            padding: 15px;
+        }
+        .naviteam a{
+            text-decoration: none;
+            color: antiquewhite;
+        }
+        .resgiterform{
+            width: max-content;
+            margin-left: auto;
+            margin-right: auto
+        }
+        .employeetable{
+            text-align: center;
+        }
+        table{
+            margin-right: auto;
+            margin-left: auto;
+            width: 100%;  
+            border-collapse: collapse;
+        }
+        th, td{
+           border: 1px solid rgb(114, 114, 231); 
+           padding: 8px;
+        }
+        .ContactUs{
+            text-align: center;
+        }
+        .foater{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to company HR Portal</h1>
+        <nav>
+            <ul>
+            <li class="naviteam"><a href="#employee-registration">Employee Registration</a></li>
+            <li class="naviteam"><a href="#employee-directory">Employee Directory</a></li>
+            <li class="naviteam"><a href="#Contact-us">Contact Us</a></li>
+        </ul>
+        </nav>
+    </header>
+      <image src ="/Employee-Portal/More.png" style="width: 100%;"></image>
+
+    <!-- section 1 -->
+        <section id="employee-registration" class="resgiterform">
+            <h2>Employee-registration</h2>
+            <p>Fill the below form to Registration as <em>employee</em></p>
+            <form>
+                <label for="name">First Name:</label>
+                <input type="text" placeholder="Enter name" id="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Email" id="email"><br><br>
+                <label for="Password">Password:</label>
+                <input type="password" placeholder="Password" id="Password"><br><br>
+                <label for="age">Age:</label>
+                <input type="number" placeholder="Age" id="age"><br><br>
+                <label for="role">Select role:</label>
+                <select>
+                    <option>Software Engineer</option>
+                    <option>Product Manager</option>
+                    <option>Designer</option>
+                    <option>HR representative</option>
+                </select><br><br>
+                <label for="joiningdate">select Joining date:</label>
+                <input type="date" placeholder="Joiningdate" id="joiningdate"><br><br>
+                <input type="Submit"><br>
+            </form>
+        </section>
+
+       <!-- section 2 -->
+        <section id="employee-directory" class="employeetable">
+            <h2>Employee Directory</h2>
+            <p>List of all registration employee </p>
+            <table>
+                <tr>
+                    <th>Employee id</th>
+                    <th>Employee Name</th>
+                    <th>Employee Role</th>
+                </tr>
+                <tr>
+                    <td>234</td>
+                    <td>Jai dixit</td>
+                    <td>Software Engineer</td>
+                </tr>
+                <tr>
+                    <td>250</td>
+                    <td>Roxy Kumar</td>
+                    <td>Product Manager</td>
+                </tr>
+                <tr>
+                    <td>230</td>
+                    <td>Naina Agganal</td>
+                    <td>Designer</td>
+                </tr>
+                <tr>
+                    <td>233</td>
+                    <td>Naina </td>
+                    <td>HR representative</td>
+                </tr>
+            </table>
+        </section>
+        <!-- section 3 -->
+        <section id="contact-us" class="ContactUs">
+            <h2>#Contact-Us</h2>
+            <P>You can contact us at company@official.com or visit us between 9AM-6PM</P>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7120.226496767738!2d80.84390933931535!3d26.836350080142722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bffac029c6b2d%3A0x1ec88a32338ad673!2z4KSq4KS_4KSC4KSVIOCkuOCkv-Ckn-ClgCwg4KSy4KSW4KSo4KSKLCDgpIngpKTgpY3gpKTgpLAg4KSq4KWN4KSw4KSm4KWH4KS2IDIyNjAxNw!5e0!3m2!1shi!2sin!4v1702827703289!5m2!1shi!2sin" width="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <footer class="foater">
+            <p>&copy; 2023 company Name</p>
+        </footer>
+    </body>
+</html>
